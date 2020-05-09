@@ -1,0 +1,7 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  StyleGuideBaseURL: 'https://rubystyle.guide'
+
+Lint/UselessAssignment:
+  StyleGuide: '#underscore-unused-vars'

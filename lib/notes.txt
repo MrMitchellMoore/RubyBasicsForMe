@@ -1,0 +1,112 @@
+Ruby not Operator
+The ! (not) operator in Ruby flips a boolean value.
+If a value is true then applying ! to the value changes it to false and vice versa.
+
+Else statement in Ruby.
+In Ruby, an if statement evaluates to either true or false.
+The code indented after the if portion is executed for true while the code indented
+after the else portion is executed for false.
+
+Comparison operators in Ruby.
+The following comparison or relational operators are used in Ruby to compare values.
+> - greater than; < - less than; >= - greater than or equal to;
+<= - less than or equal to; == - equal to
+
+Or operator in Ruby.
+The || (or) operator is a logical operator which returns true if either of the expressions
+on left-hand side or right-hand side is true.
+
+if Statement in Ruby
+An if statement in Ruby evaluates an expression, which returns either true or false.
+If the expression is true, Ruby executes the code block that follows the if whereas if the expression is false, 
+Ruby returns nil.
+In this example, the string "Your condition was true!" will print because the condition
+number == 10 is true.
+
+And operator in Ruby.
+&& is a logical operator in Ruby which evaluates to true only if both expressions on
+either side of && evaluates to true.
+
+Unless statement in Ruby.
+An unless statement in Ruby is used to evaluate an expression.
+If the expression evaluates to false, then the code following unless is executed.
+
+Ruby Assignment Operators
+Assignment operators in Ruby are used to assign or update values to variables.
+The most common assignment operator is = but others also exist, like +=, -=, *= and /=.
+
+Ruby each Method
+To iterate over an array in Ruby, use the .each method.
+It is preferred over a for loop as it is guaranteed to iterate through each element of
+an array.
+
+Ruby next Keyword
+In Ruby, the next keyword is used within a loop to pass over certain elements and skip to the following iteration. 
+It is useful for omitting elements that you do not wish to have iterated.
+Next is followed by an if statement which defines which elements are to be skipped.
+
+Ruby while Loop
+Putting a block of code in a while loop in Ruby will cause the code to repeatedly run 
+the code as long as its condition is true.
+If the block of code doesn’t have a way for the condition to be changed to false, 
+the while loop will continue forever and cause an error.
+
+Ruby times Method
+To execute the same block of code a set a number of times in Ruby, use the times method.
+
+Ruby Range
+In ruby, a sequence of integers can be demonstrated by a range. 
+The range can be divided into an inclusive range where the last integer in the sequence 
+is included and an exclusive range where the last integer is excluded.
+
+Ruby loop
+A loop method can be used to run a block of code repeatedly in Ruby. 
+Either use curly braces ({}) or the do/end keyword combination to wrap the block the 
+code that will be looped.
+
+Ruby until Loop
+Putting a block of code inside an until loop in Ruby will cause the code to run as 
+long as its condition remains false. It’s only when the condition becomes true that the 
+loop stops.
+If the block of code doesn’t allow for a way for the condition to be changed to true then
+the loop will continue forever and it will cause an error.
+
+Ruby for Loop
+A block of code can be repeated a set amount of times with the for loop in Ruby.
+
+Ruby Hash
+In Ruby, a hash is a collection of key-value pairs.
+A hash is denoted by a set of curly braces ({}) which contains key-value pairs separated 
+by commas. Each value is assigned to a key using a hash rocket (=>). 
+Calling the hash followed by a key name within brackets grabs the value associated with 
+that key.
+
+Ruby Array
+In Ruby, an array is an ordered collection of Ruby objects separated by commas and 
+enclosed in []. An array can contain the same or different types of Ruby objects, 
+such as Integers, Strings, Floats, etc. An array can also be empty.
+
+Ruby Hash New
+In Ruby, a hash can be created through literal notation (because we are literally 
+assigning what key=>value pairs we want in the hash) or by assigning a variable equal 
+to Hash.new which generates a new, empty hash.
+
+Ruby Hash Bracket Notation Adding Pairs
+In Ruby, a new key-value pair can be added to a hash using bracket notation. 
+The new key is bracketed after the name of the hash and then the value is assigned 
+after the equals sign.
+
+Ruby Multidimensional Arrays
+In Ruby, arrays can be nested within one another representing multi dimensional arrays. 
+An array can hold another array as if it was like any other Ruby object, such as an Integer 
+or a String.
+
+Ruby Array Index
+In Ruby, each item inside of an array is at a numbered position called an index. 
+The first item is at index 0, the second item is at index 1, and so on. 
+We can access the ith element of an array by putting the index in square brackets 
+after invoking the array’s name; this is known as access by index.
+
+Ruby Method .Each
+In Ruby, the .each method is used to iterate over arrays and hashes. 
+This allows each element in an array and each key-value pair in a hash to be iterated.
