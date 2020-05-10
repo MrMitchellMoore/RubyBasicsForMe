@@ -7,9 +7,10 @@
 /spec/reports/
 /tmp/
 /ruby_me.gemspec
-*.yml
+/**.yml
 
 # rspec failure tracking
-/.rspec
+/**.rspec
 .rspec_status
-/.gemfile.lock
+/**.lock
+LICENSE.txt
