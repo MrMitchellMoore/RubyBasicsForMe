@@ -6,8 +6,10 @@
 /pkg/
 /spec/reports/
 /tmp/
+/ruby_me.gemspec
+*.yml
 
 # rspec failure tracking
+/.rspec
 .rspec_status
-.Gemfile.lock
-ruby_me.gemspec
+/.gemfile.lock
