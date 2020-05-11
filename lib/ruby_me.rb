@@ -1,29 +1,27 @@
 module RubyBasicsPart1
-=begin
-  This is the ruby basics
-  This is so cool
-=end
+  #   This is the ruby basics
+  #   This is so cool
 
   class RubyMe
     print "I just printed "
     puts "We are here"
 
-    puts 1+3
+    puts 1 + 3
     # Addition: output 4
 
-    puts 1-2
+    puts 1 - 2
     # Subtraction: output -1
 
-    puts 9/3
+    puts 9 / 3
     # Division: output 3
 
-    puts 2*3
+    puts 2 * 3
     # Multiplication: output 6
 
     puts 2**3
     # Exponentiation: output 8
 
-    puts 16%9
+    puts 16 % 9
     # Modulo: output 7
 
     var = "codecademy"
@@ -55,7 +53,7 @@ module RubyBasicsPart1
     # If Else statements
     print "enter a number: "
     num = gets.chomp
-    num =  num.to_i;
+    num =  num.to_i
 
     if num == 5
       puts "number is 5"
@@ -85,7 +83,6 @@ module RubyBasicsPart1
     else
       puts "Score 1 is not the greatest in value."
     end
-
   end
 
   class RubyMePart3
@@ -96,14 +93,13 @@ module RubyBasicsPart1
     # than 10 in order to execute:
     print "Enter a number "
     number = gets.to_i
-    unless number > 10
-      puts "number is less than 10."
-    end
+    puts "number is less than 10." unless number > 10
 
-    # In this example, the next keyword along with a shorthand if statement is used to 
+    # In this example, the next keyword along with a shorthand if statement is used to
     # skip over the even numbers in the sequence.
-    for i in 1..10
-      next if i % 2 == 0
+    (1..10).each do |i|
+      next if i.even?
+
       puts i
     end
 
@@ -112,64 +108,64 @@ module RubyBasicsPart1
     # Hashes and Arrays
     profile = {
       "name" => "Magnus",
-      "profession" => "chess player"
+      "profession" => "chess player",
       "ranking" => 1,
       "grandmaster?" => true
     }
     puts profile["name"] # => Magnus
 
     numbers = [1, 2, 3, 4, 5]
-    #An array of Integers
+    # An array of Integers
 
-    words = ["See", "Spot", "run"]
-    #An array of Strings
+    words = %w[See Spot run]
+    # An array of Strings
 
     mixed = ["hello", 5, true, 3.0]
-    #An array with a String, Integer, Boolean, and Float
+    # An array with a String, Integer, Boolean, and Float
 
     empty = []
-    #An empty array
+    # An empty array
 
-    #Creating a hash through literal notation:
+    # Creating a hash through literal notation:
     lunch = {
       "protein" => "chicken",
       "greens" => "lettuce",
       "organic?" => true
     }
 
-    #Creating a hash through Hash.new
-    lunch = Hash.new
+    # Creating a hash through Hash.new
+    lunch = {}
     puts lunch # => {}
 
-    #Bracket notation applies to any hash, regardless of how it was initialized
-    teammates = Hash.new
+    # Bracket notation applies to any hash, regardless of how it was initialized
+    teammates = {}
     teammates["forward"] = "Messi"
 
     salary = {
-      "starting" => 40000
+      "starting" => 40_000
     }
-    salary["mid-level"] = 60000
+    salary["mid-level"] = 60_000
 
-    multi_array = [[0,1,2,3],[4.5, true, "hi"]]
+    multi_array = [[0, 1, 2, 3], [4.5, true, "hi"]]
     # Accessing the array at index 1
     puts multi_array[1] # => [4.5, true, "hi"]
     # Accessing the element at index 0 within the array at index 1
     puts multi_array[1][0] # => 4.5
 
     example = ["Car", "Boar", 45, 9.9, true]
-    #For an array named `example`, you can retrieve an item of a particular index by referencing its index.
+    # For an array named `example`, you can retrieve an item of a particular index by referencing its index.
     puts example[2] # => 45
     puts example[0] # => Car
 
-    #In this example, the each method iterates over every color in the colors array and prints it to the console.
-    colors = ["red", "blue", "green", "yellow"]
+    # In this example, the each method iterates over every color in the colors array and prints it to the console.
+    colors = %w[red blue green yellow]
     colors.each { |color| puts color }
-    #Output
-    #red
-    #blue
-    #green
-    #yellow
-      #When iterating over hashes, two placeholder variables are needed to represent each key/value pair.
+    # Output
+    # red
+    # blue
+    # green
+    # yellow
+    # When iterating over hashes, two placeholder variables are needed to represent each key/value pair.
     polygons = {
       "pentagon" => 5,
       "hexagon" => 6,
@@ -179,11 +175,9 @@ module RubyBasicsPart1
     polygons.each do |shape, sides|
       puts "A #{shape} has #{sides} sides."
     end
-    #Output
-    #A pentagon has 5 sides.
-    #A hexagon has 6 sides.
-    #A nonagon has 9 sides.
-
+    # Output
+    # A pentagon has 5 sides.
+    # A hexagon has 6 sides.
+    # A nonagon has 9 sides.
   end
-
 end
