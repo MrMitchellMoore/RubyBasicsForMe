@@ -1,0 +1,32 @@
+Ruby Class Variables
+In Ruby, class variables are attached to the class in which they are declared. A class variable should be declared with two @ symbols preceding it.
+
+Ruby .new Method
+In Ruby, a new class instance can be created by calling the .new method of the class. Arguments to the class’ initialize method can be passed in to the .new call.
+
+Ruby Instance Variable
+In Ruby, the @ symbol is used to signify an instance variable. Instance variables hold a value specific to each instance of that class, not to all members of the class itself.
+
+Ruby initialize Method
+In a Ruby class, an initialize method is used to generate new instances of the class. It is usually the first method of a class.
+
+Ruby Class
+A Ruby class is used to organize and model objects with similar attributes and methods.
+
+Ruby super Keyword
+Ruby’s built-in super keyword is used to directly access the attributes or methods of a superclass. This means a class with super will inherit the attributes or methods of a superclass.
+
+Ruby attr_reader attr_writer Methods
+In Ruby, attr_reader and attr_writer are methods used to read and write variables, respectively.
+
+Ruby namespace
+In Ruby, the term namespace refers to a module the contains a group of related objects. An example of a Ruby namespace is the Math module.
+
+Ruby require Keyword
+In Ruby, the require keyword is used to fetch a certain module which isn’t yet presented in the interpreter. It is best practice to place this at the beginning of your code.
+
+Ruby Module
+In Ruby, a module contains a set of methods, constants, or classes which can be accessed with the . operator similarly to classes . Unlike classes, it is impossible to create instances of a Ruby module.
+
+Ruby attr_accessor Method
+In Ruby, attr_accessor, used to make a variable both readable and writeable, is a shortcut to attr_reader and attr_writer.
