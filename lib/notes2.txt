@@ -83,3 +83,43 @@ Ruby Method Parameters & Arguments
 In Ruby, parameters are placeholders for real values or arguments passed into a method 
 when it is called. When calling a method that requires parameters, arguments 
 (ie. real values) must be passed in for those parameters.
+
+Ruby Case Statement
+In Ruby, a case statement is a more concise alternative to an if/else statement that contains many conditions.
+
+Ruby .respond_to?
+In Ruby, .respond_to? takes a symbol representing a method name and returns true if that method can be called on the object and false otherwise.
+
+Ruby Short-Circuit Evaluation
+When Ruby evaluates expressions containing boolean operators, it uses short-circuit evaluation. With ||, if the expression on the left evaluates to true, it will return true. Otherwise, it will check if the expression on the right evaluates to true. If so, the expression returns true; otherwise, it will return false.
+With &&, both the expression on the left and the expression on the right have to evaluate to true in order to return true. If either expression is false, it will return false
+
+Ruby Ternary Operator
+In Ruby, a ternary operator is a more concise alternative to an if/else. It consists of a conditional, followed by ? and an expression to be evaluated if the conditional is true, and then : and an expression to evaluate if the conditional is false.
+
+Ruby .upto and .downto Methods
+In Ruby, the .upto and .downto methods are used to iterate over a specific range of values.
+
+Ruby .call Method
+In Ruby, a proc and a lambda can be called directly using the .call method.
+
+Why Procs?
+Why bother saving our blocks as procs? There are two main advantages:
+Procs are full-fledged objects, so they have all the powers and abilities of objects. (Blocks do not.)
+Unlike blocks, procs can be called over and over without rewriting them. This prevents you from having to retype the contents of your block every time you need to execute a particular bit of code.
+
+Symbols, Meet Procs
+Now that you’re learning some of the more complex parts of the Ruby language, you can combine them to work some truly arcane magicks. For instance, remember when we told you that you could pass a Ruby method name around with a symbol? Well, you can also convert symbols to procs using that handy little &.
+By mapping &:to_i over every element of strings, we turned each string into an integer!
+
+The Ruby Lambda
+Like procs, lambdas are objects. The similarities don’t stop there: with the exception of a bit of syntax and a few behavioral quirks, lambdas are identical to procs.
+
+Ruby .collect Method
+In Ruby, the .collect array method takes a block and applies the expression in the block to every element of an array.
+
+Ruby yield Keyword
+In Ruby, the yield keyword is used to transfer control from a method to a block and then back to the method once executed.
+
+Ruby proc
+In Ruby, a proc is an instance of the Proc class and is similar to a block. As opposed to a block, a proc is a Ruby object which can be stored in a variable and therefore reused many times throughout a program.

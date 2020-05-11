@@ -78,4 +78,57 @@ module RubyBasics2
     puts caption
     
   end
+  class RubyMe2p2
+
+    # Using the collect method which doesn't mutate the array
+    # Using collect! will mutate it
+    fibs = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+    doubled_fibs = fibs.collect { |num| num * 2}
+    puts doubled_fibs
+
+    # Using Yield will sub in a block at a later time
+    def block_test
+      puts "We're in the method!"
+      puts "Yielding to the block..."
+      yield
+      puts "We're back in the method!"
+    end
+
+    block_test { puts ">>> We're in the block!" }
+
+    # Using Procs to make our code DRY
+    multiples_of_3 = Proc.new do |n|
+      n % 3 == 0
+    end
+
+    print (1..100).to_a.select(&multiples_of_3)
+
+    # Proc.new is how we init a proc and pass a block
+    # Collect! and Map! are the same with the & symbol just used to convert into block
+    cube = Proc.new { |x| x ** 3 }
+    [1, 2, 3].collect!(&cube)
+    # ==> [1, 8, 27]
+    [4, 5, 6].map!(&cube)
+    # ==> [64, 125, 216]
+    # You can convert strings to integer or vice verser using &:to_s or &:to_i
+    strings = ["1", "2", "3"]
+    nums = strings.map(&:to_i)
+    # ==> [1, 2, 3]
+
+    # Example of a simple lambda
+    def lambda_demo(a_lambda)
+      puts "I'm the method!"
+      a_lambda.call
+    end
+
+    lambda_demo(lambda { puts "I'm the lambda!" })
+
+    # lambda to check if array contains symbols and if it does puts it out
+    my_array = ["raindrops", :kettles, "whiskers", :mittens, :packages]
+    symbol_filter = lambda { |s| s.is_a? Symbol }
+    symbols = my_array.select(&symbol_filter)
+    puts symbols
+
+  end
 end
